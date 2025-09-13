@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid plum;
+            margin: 5px;
+        }
+        #first{
+            background-color: red;
+            /* position: static; */
+            position: relative;
+            left: 50px;
+            z-index: 99;
+
+        }
+        #second{
+            background-color: purple;
+            position: absolute;
+            right: 10px;
+
+        }
+        #third{
+            background-color: aquamarine;
+            position: fixed;
+            top: 5px;
+
+        }
+        #four{
+            background-color: brown;
+            position: sticky;
+            top: 0px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="four"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="first"></div>
+    <div class="box" id="second"></div>
+    <div class="box" id="third"></div>
+
+    
+</body>
+</html>

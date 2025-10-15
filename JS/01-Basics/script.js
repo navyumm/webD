@@ -51,7 +51,7 @@
 
 //! difference between null and undefined 
 
-// var a ;
+// var userName ;
 // console.log(typeof a);   // undefined
 
 // var b = null;
@@ -170,11 +170,14 @@
 
 
 
-// let giyu =   10;
-// let Goku =   8;
+let giyu =   8;
+let Goku =   "8";
 
 // //*    equal to ==
 // console.log(giyu == Goku);
+
+//* triple ===
+// console.log(giyu === Goku);
 
 // //*    Not equal to  !=
 // console.log(giyu != Goku);

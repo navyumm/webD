@@ -202,9 +202,9 @@
 //? A do-while loop is similar to a while loop, but it always executes the block of code at least once, even if the condition is initially false. 
 
 //! Syntax
-//      do{  
-//         code to be executed  
-//     }while (condition);  
+    //  do{  
+    //     code to be executed  
+    // }while (condition);  
 
 
 // let num = 11;

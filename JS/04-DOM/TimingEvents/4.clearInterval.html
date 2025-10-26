@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Page</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      p {
+        font-size: 24px;
+        color: #333;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <p>stop me when I reach at 5</p>
+        <br />
+        <button id="btn">Start</button>
+        <button id="btn1" onclick="clearInterval(timeRef)">Stop</button>
+      </div>
+    </div>
+
+    <script>
+      const stopNum = document.querySelector("p");
+      const btn = document.querySelector("#btn");
+
+      let timeRef;
+      let num = 0;
+
+      const showMyNum = () => {
+        stopNum.innerHTML = "Loading...";
+
+        timeRef = setInterval(() => {
+          stopNum.innerHTML = `${num}`;
+          num++;
+        }, 0);
+      };
+
+      btn.addEventListener("click", showMyNum);
+    </script>
+  </body>
+</html>

@@ -29,7 +29,7 @@
 
 //! Syntax
 // function functionName(){
-  // Code to be executed 
+//   Code to be executed 
 // }
 
 // function sum(){
@@ -318,7 +318,7 @@
 
 // |        Method      |            Description            |               Example                  |
 // | ---------------- | ---------------------------- | ------------------------------ |
-// |        push()       |          Add at end                |       fruits.push("Orange")      |
+// |        push()        |          Add at end                |       fruits.push("Orange")      |
 // |        pop()         |            Remove last            |            fruits.pop()                 |
 // |        unshift()    |           Add at start              |   fruits.unshift("Pineapple")   |
 // |      shift()          |          Remove first              |          fruits.shift()                   |

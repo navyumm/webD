@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Page</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      div {
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      p {
+        font-size: 24px;
+        color: #333;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <p>Want to know my name? 😎</p>
+        <p id="showMyName"></p>
+        <br />
+        <button id="btn">Click here</button>
+        <button id="btn1">Stop</button>
+        <!-- <button onclick="setTimeout(myname, 1000);">Click here</button> -->
+      </div>
+    </div>
+
+    <script>
+      const myName = document.querySelector("#showMyName");
+      const btn = document.querySelector("#btn");
+      const btn1 = document.querySelector("#btn1");
+
+      let time;
+
+      function showMyName() {
+        time = setTimeout(function () {
+          myName.innerHTML = "sachin";
+        }, 2000);
+      }
+
+      btn.addEventListener("click", showMyName);
+
+      btn1.addEventListener("click", () => {
+        clearTimeout(time);
+      });
+    </script>
+  </body>
+</html>
